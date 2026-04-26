@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription | ENSAH</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/logo-ensah.png" type="image/png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div id="main_wrapper">
+        <header>
+            <div class="top-header">
+                <img src="images/logo-ensah.png" alt="Logo ENSAH">
+                <h1>ENSA d'Al Hoceima</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">ACCUEIL</a></li>
+                    <li><a href="index.html#presentation">PRESENTATION</a></li>
+                    <li><a href="formation.html">FORMATION</a></li>
+                    <li><a href="inscription.html">INSCRIPTION</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="form-section">
+            <h2
+                style="color: var(--primary); border-bottom: 3px solid var(--secondary); display: inline-block; margin-bottom: 2rem;">
+                Formulaire d'Inscription</h2>
+
+            <form action="#" method="post" enctype="multipart/form-data">
+                <!-- Photo Section -->
+                <div class="form-group">
+                    <label for="photo">Photo de l'étudiant :</label>
+                    <input type="file" id="photo" name="photo" accept="image/*" required>
+                </div>
+
+                <!-- General Info -->
+                <fieldset style="border: 1px solid #ddd; padding: 1.5rem; border-radius: 8px; margin-bottom: 2rem;">
+                    <legend style="padding: 0 0.5rem; color: var(--primary); font-weight: 700;">Informations Générales
+                    </legend>
+
+                    <div class="form-group">
+                        <label for="nom">Nom Complet :</label>
+                        <input type="text" id="nom" name="nom" placeholder="Votre nom complet" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Genre :</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="genre" value="homme" required> Homme</label>
+                            <label><input type="radio" name="genre" value="femme"> Femme</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="age">Âge :</label>
+                        <input type="number" id="age" name="age" min="17" max="30" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dob">Date de Naissance :</label>
+                        <input type="date" id="dob" name="dob" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pays">Pays :</label>
+                        <select id="pays" name="pays">
+                            <option value="maroc">Maroc</option>
+                            <option value="france">France</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <!-- Indicators -->
+                <fieldset style="border: 1px solid #ddd; padding: 1.5rem; border-radius: 8px; margin-bottom: 2rem;">
+                    <legend style="padding: 0 0.5rem; color: var(--primary); font-weight: 700;">Indicateurs</legend>
+
+                    <div class="form-group">
+                        <label for="height">Taille (cm) :</label>
+                        <div class="range-wrap">
+                            <input type="range" id="height" name="height" min="140" max="210" value="170"
+                                oninput="this.nextElementSibling.value = this.value">
+                            <output>170</output>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="salary">Poids (kg) :</label>
+                        <div class="range-wrap">
+                            <input type="range" id="salary" name="salary" min="40" max="150" step="1" value="70"
+                                oninput="this.nextElementSibling.value = this.value">
+                            <output>70</output>
+                        </div>
+                    </div>
+
+                </fieldset>
+
+                <!-- Coordonnées -->
+                <fieldset style="border: 1px solid #ddd; padding: 1.5rem; border-radius: 8px; margin-bottom: 2rem;">
+                    <legend style="padding: 0 0.5rem; color: var(--primary); font-weight: 700;">Coordonnées</legend>
+
+                    <div class="form-group">
+                        <label for="email">Email :</label>
+                        <input type="email" id="email" name="email" placeholder="exemple@email.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mobile">Mobile :</label>
+                        <input type="text" id="mobile" name="mobile" placeholder="+212 6..." required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="adresse">Adresse :</label>
+                        <textarea id="adresse" name="adresse" rows="4"
+                            placeholder="Votre adresse physique..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="filiere">Filiere :</label>
+                        <div class="range-wrap">
+                            <input type="text" id="filiere" name="filiere"
+                                oninput="this.nextElementSibling.value = this.value">
+
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Options de contact préférées :</label>
+                        <div class="radio-group" style="flex-wrap: wrap;">
+                            <label><input type="checkbox" name="contact_opt" value="email"> Email</label>
+                            <label><input type="checkbox" name="contact_opt" value="whatsapp"> Whatsapp</label>
+                            <label><input type="checkbox" name="contact_opt" value="chat"> Chat</label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <div style="text-align: center;">
+                    <button type="submit" class="btn" style="border: none; cursor: pointer;">Envoyer</button>
+                </div>
+            </form>
+        </main>
+
+        <footer>
+            <div class="footer-col">
+                <h3>CONTACTEZ NOUS</h3>
+                <p><i class="fas fa-map-marker-alt"></i> BP 03, Ajdir Al Hoceima</p>
+                <p><i class="fas fa-phone"></i> +212 5 39 80 57 12</p>
+            </div>
+            <div class="footer-col">
+                <h3>GALERIES</h3>
+                <div class="gallery-grid">
+                    <img src="images/gallery-1.png" alt="Photo 1">
+                    <img src="images/banner-home.png" alt="Photo 2">
+                    <img src="images/news.png" alt="Photo 3">
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>LIENS UTILES</h3>
+                <ul>
+                    <li><a href="https://www.ensup.gov.ma" target="_blank">Enseignement Supérieur</a></li>
+                    <li><a href="https://www.uae.ac.ma" target="_blank">Université Abdelmalek Essaâdi</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

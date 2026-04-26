@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formation | ENSAH</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/logo-ensah.png" type="image/png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div id="main_wrapper">
+        <header>
+            <div class="top-header">
+                <img src="images/logo-ensah.png" alt="Logo ENSAH">
+                <h1>ENSA d'Al Hoceima</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">ACCUEIL</a></li>
+                    <li><a href="index.html#presentation">PRESENTATION</a></li>
+                    <li><a href="formation.html">FORMATION</a></li>
+                    <li><a href="inscription.html">INSCRIPTION</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="form-section">
+            <h2
+                style="color: var(--primary); border-bottom: 3px solid var(--secondary); display: inline-block; margin-bottom: 2rem;">
+                Espace Multimédia</h2>
+
+            <section style="margin-bottom: 4rem;">
+                <h3>Présentation Vidéo</h3>
+                <p style="margin-bottom: 1rem;">Découvrez notre campus et nos laboratoires à travers cette vidéo.</p>
+                <video width="100%" controls poster="images/banner-home.png"
+                    style="border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">
+                    <source src="video.mp4" type="video/mp4">
+                    Votre navigateur ne supporte pas la balise vidéo.
+                </video>
+            </section>
+
+            <section>
+                <h3>Ambiance Sonore</h3>
+                <p style="margin-bottom: 1rem;">Hymne de l'école ou message de bienvenue.</p>
+                <audio controls autoplay loop style="width: 100%;">
+                    <source src="audio.wav" type="audio/mpeg">
+                    Votre navigateur ne supporte pas la balise audio.
+                </audio>
+                <p style="font-size: 0.8rem; color: #666; margin-top: 0.5rem;">(Note: L'autoplay peut être bloqué par
+                    votre navigateur)</p>
+            </section>
+        </main>
+
+        <footer style="margin-top: 2rem;">
+            <div class="footer-col">
+                <h3>CONTACTEZ NOUS</h3>
+                <p><i class="fas fa-map-marker-alt"></i> BP 03, Ajdir Al Hoceima</p>
+                <p><i class="fas fa-phone"></i> +212 5 39 80 57 12</p>
+            </div>
+            <div class="footer-col">
+                <h3>GALERIES</h3>
+                <div class="gallery-grid">
+                    <img src="images/gallery-1.png" alt="Photo 1">
+                    <img src="images/banner-home.png" alt="Photo 2">
+                    <img src="images/news.png" alt="Photo 3">
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>LIENS UTILES</h3>
+                <ul>
+                    <li><a href="https://www.ensup.gov.ma" target="_blank">Enseignement Supérieur</a></li>
+                    <li><a href="https://www.uae.ac.ma" target="_blank">Université Abdelmalek Essaâdi</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

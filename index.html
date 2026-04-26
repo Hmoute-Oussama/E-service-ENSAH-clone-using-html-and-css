@@ -1,33 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oussama Hmoute | Portfolio</title>
+    <title>ENSAH | Ecole Nationale des Sciences Appliquées d'Al Hoceima</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/png" id="ensah" />
+    <!-- Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#about"> About me</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#contact">Contact</a>
-                </li>
+    <div id="main_wrapper">
+        <header>
+            <div class="top-header">
+                <img src="images/logo1.png" alt="Logo ENSAH">
+                <h1>ENSA d'Al Hoceima</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">ACCUEIL</a></li>
+                    <li><a href="#presentation">PRESENTATION</a></li>
+                    <li><a href="formation.html">FORMATION</a></li>
+                    <li><a href="inscription.html">INSCRIPTION</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
 
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="section1">
-            <h1> Oussama Hmoute</h1>
-            <h2>Software Developer & Web Designer</h2>
-            <p>Welcome to my portfolio website. I specialize in creating responsive and user-friendly web applications.</p>
-            
-        </section>
-    </main>
-    <footer>
+        <div class="banner">
+            <div class="banner-content">
+                <h2>Bâtissons l'avenir de l'ingénierie</h2>
+                <p>L'excellence académique au cœur de la Méditerranée.</p>
+                <a href="#presentation" class="btn">Voir l'article</a>
+            </div>
+        </div>
 
-    </footer>
+        <main class="main-content">
+            <section id="presentation">
+                <article>
+                    <h2>Présentation de l'École</h2>
+                    <p>L'École Nationale des Sciences Appliquées d'Al Hoceima (ENSAH) est un établissement public
+                        d'enseignement supérieur à caractère scientifique et technique. Créée pour répondre aux besoins
+                        croissants en ingénieurs hautement qualifiés.</p>
+
+                    <h3>Nos Missions</h3>
+                    <p>Former des ingénieurs d'état pluridisciplinaires capables de s'adapter aux évolutions
+                        technologiques et aux exigences du marché de l'emploi.</p>
+
+                    <h3>Spécialités</h3>
+                    <div class="specialities">
+                        <div class="spec-item">
+                            <strong>Génie Informatique</strong>
+                            <p>Développement, IA, Réseaux et Cybersécurité.</p>
+                        </div>
+                        <div class="spec-item">
+                            <strong>Génie Civil</strong>
+                            <p>Infrastructure, Bâtiment et Urbanisme.</p>
+                        </div>
+                        <div class="spec-item">
+                            <strong>Génie Environnement</strong>
+                            <p>Gestion des ressources et développement durable.</p>
+                        </div>
+                        <div class="spec-item">
+                            <strong>Génie Énergétique</strong>
+                            <p>Énergies renouvelables et efficacité énergétique.</p>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <aside>
+                <h2>ACTUALITÉS</h2>
+                <div class="news-card">
+                    <img src="images/ensah1.png" alt="Actualité">
+                    <p><strong>Lancement du Club Robotique</strong></p>
+                    <p>Rejoignez-nous pour la nouvelle saison de compétitions nationales.</p>
+                </div>
+
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </aside>
+        </main>
+
+        <footer>
+            <div class="footer-col">
+                <h3>CONTACTEZ NOUS</h3>
+                <p><i class="fas fa-map-marker-alt"></i> BP 03, Ajdir Al Hoceima</p>
+                <p><i class="fas fa-phone"></i> +212 5 39 80 57 12</p>
+                <p><i class="fas fa-user-plus"></i> <a href="inscription.html" style="color: var(--secondary); text-decoration: none;">S'inscrire à l'ENSAH</a></p>
+            </div>
+            <div class="footer-col">
+                <h3>GALERIES</h3>
+                <div class="gallery-grid">
+                    <img src="images/ensah3.png" alt="Photo 1">
+                    <img src="https://static.lematin.ma/files/lematin/images/articles/2008/07/20080726-p-1SMLEROI.jpg" alt="Photo 2">
+                    <img src="https://ensah.ma/images/ensah.jpg" alt="Photo 3">
+                </div>
+            </div>
+            <div class=" footer-col">
+                    <h3>LIENS UTILES</h3>
+                    <ul>
+                        <li><a href="https://www.ensup.gov.ma" target="_blank">Enseignement Supérieur</a></li>
+                        <li><a href="https://www.uae.ac.ma" target="_blank">Université Abdelmalek Essaâdi</a></li>
+                        <li><a href="#" target="_blank">FST Al Hoceima</a></li>
+                    </ul>
+                </div>
+        </footer>
+    </div>
 </body>
+
 </html>
